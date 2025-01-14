@@ -1,6 +1,9 @@
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 import { ChevronsRight } from 'lucide-react';
+import { Link } from 'react-router-dom'
+import Register from '../Auth/Register'
+
 
 import aWriter from '../../assets/images/a-writer.jpg'
 
@@ -36,7 +39,10 @@ const Home = () => {
                 <p>24/7 Support</p>
                 </div>
 
+             
+                <Link to="/Register">
                 <button className='bg-green-500 text-white px-4 py-2 rounded-md hover:text-black'>Become a Creator</button>
+                </Link>
             </div>
             <div>
                 <div className='w-[450px] h-[450px] border rounded-3xl overflow-hidden'>
