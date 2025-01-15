@@ -25,6 +25,7 @@ export default {
     colors:{
       'purple': '#6200EE',
       'white': '#FFFCFF',
+      'black': '#000000'
     },
     fontFamily: {
       sans: ['mona-sans', 'sans-serif'],

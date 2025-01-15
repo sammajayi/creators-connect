@@ -2,10 +2,14 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 import { ChevronsRight } from 'lucide-react';
 import { Link } from 'react-router-dom'
-import Register from '../Auth/Register'
+// import Register from '../../components/Auth/Register'
 
 
 import aWriter from '../../assets/images/a-writer.jpg'
+import freelance1 from '../../assets/images/freelnce-1.jpg'
+import freelance6 from '../../assets/images/freelnce-6.jpg'
+import freelance7 from '../../assets/images/freelnce-7.jpg'
+import freelance8 from '../../assets/images/freelnce-8.jpg'
 
 const Home = () => {
   return (
@@ -14,7 +18,7 @@ const Home = () => {
         <section className='bg-[#FFF6F4] w-full'>
             <div className='flex flex-row  space-x-10 py-10 mx-auto w-[80%] justify-center items-center'>
 
-            <div className='W-[100%] space-y-3 text-left'>
+            <div className='w-[100%] space-y-3 text-left'>
                 <p className='text-lg font-bold'>FOR CREATORS</p>
                 <h2 className='text-2xl font-bold'>Create Your First Project Today</h2>    
                 <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur elit. Praesent quis tincidunt metus.</p>
@@ -62,7 +66,7 @@ const Home = () => {
                 <div className='flex flex-row space-x-10 py-10 '>
                     <div className='flex flex-col space-y-3 justify-center items-center'>
                         <div className='w-[200px] h-[200px] border rounded-3xl hover:scale-105 transition-all duration-300'>
-                            <img src="../src/assets/images/freelnce-1.jpg" alt="" />
+                            <img src={freelance1} alt="Freelancer 1" />
                         </div>
                         <p className='text-lg font-bold'>Lucy Haley</p>
                        <p>Food Content Creator</p>
@@ -71,7 +75,7 @@ const Home = () => {
 
                     <div className='flex flex-col space-y-3 justify-center items-center hover:scale-105 transition-all duration-300'>
                         <div className='w-[200px] h-[200px] border rounded-3xl'>
-                            <img src="../src/assets/images/freelnce-7.jpg" alt="" />
+                            <img src={freelance7} alt="Freelancer" />
                         </div>
                         <p className='text-lg font-bold'>Thiago Henry</p>
                         <p>Food Content Creator</p>
@@ -80,7 +84,7 @@ const Home = () => {
 
                     <div className='flex flex-col space-y-3 justify-center items-center hover:scale-105 transition-all duration-300'>
                         <div className='w-[200px] h-[200px] border rounded-3xl'>
-                            <img src="../src/assets/images/freelnce-6.jpg" alt="" />
+                            <img src={freelance6} alt="Freelancer" />
                         </div>
                         <p className='text-lg font-bold'>Marcus Ross</p>
                         <p>Fashion Model</p>
@@ -89,7 +93,7 @@ const Home = () => {
 
                     <div className='flex flex-col space-y-3 justify-center items-center hover:scale-105 transition-all duration-300'>
                         <div className='w-[200px] h-[200px] border rounded-3xl'>
-                            <img src="../src/assets/images/freelnce-8.jpg" alt="" />
+                            <img src={freelance8} alt="Freelancer" />
                         </div>
                         <p className='text-lg font-bold'>Kianna Ble</p>
                         <p>Food Content Creator</p>
@@ -97,7 +101,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <a href="">Explore Other Creators</a>
+                <Link to="/creators">Explore Other Creators</Link>
             </div>
 
         </section>
